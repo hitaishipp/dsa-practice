@@ -4,6 +4,7 @@ public class maxSubarray{      //brute force method O(n^2)
         int maxSum = Integer.MIN_VALUE;
         int start=0, end=0;
        for(int i=0;i<=arr.length-1;i++){
+        
            int currSum = 0;
           for(int j=i;j<=arr.length-1;j++){
               currSum += arr[j];
