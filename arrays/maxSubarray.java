@@ -1,4 +1,4 @@
-import java.util.*;
+
 public class maxSubarray{      //brute force method O(n^2)
     public static void maxsub(int arr[]){
         int maxSum = Integer.MIN_VALUE;
