@@ -31,5 +31,6 @@ public class binarysearch {
        System.out.println("enter the element you want to search");
        int tar = sc.nextInt();
        search(nums,tar);
+       sc.close();
     }
 }

@@ -1,5 +1,4 @@
-import java.util.*;
-public class maxSubarray{      //prefix sum method O(n^2)
+public class maxSubarrayII{      //prefix sum method O(n^2)
     public static void maxsub(int arr[]){
         int maxSum = Integer.MIN_VALUE;
         int arr1[]= new int[arr.length];

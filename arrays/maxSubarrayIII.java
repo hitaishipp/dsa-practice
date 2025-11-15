@@ -1,6 +1,5 @@
 //kadane's algorithm
-import java.util.*;
-public class maxSubarray{
+public class maxSubarrayIII{
     public static void kadane(int arr[]){
         int maxSum= Integer.MIN_VALUE;
         int currSum=0;

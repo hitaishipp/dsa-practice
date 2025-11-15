@@ -1,4 +1,3 @@
-import java.util.*;
 public class rainwaterTrap{
     public static void trappingWater(int arr[]){
         int area=0;
