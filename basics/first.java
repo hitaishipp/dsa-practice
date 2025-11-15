@@ -6,7 +6,7 @@ public class first{
         float r = sc.nextFloat();
         double area = 3.14*r*r;
         System.out.println("the area of the circle is " + area);
-
+        sc.close();
     }
 
 }

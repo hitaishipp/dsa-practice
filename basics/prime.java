@@ -7,6 +7,7 @@ public class prime{
         int flag=0;
         if (num <= 1) {
             System.out.println(num + " is not a prime number");
+            sc.close();
             return;
         }
         
@@ -22,5 +23,6 @@ public class prime{
         else{
             System.out.println(num+" is not a prime number");
         }
+        sc.close();
     }
 }
