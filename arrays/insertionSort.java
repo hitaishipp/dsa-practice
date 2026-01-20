@@ -1,18 +1,16 @@
 public class insertionSort {
-    public static int[] sort(int arr[]){
-        for(int i=0;i<arr.length-1;i++){
-            int j=i+1;
-           while((j>0)&&(arr[j-1]>arr[j])){
+    public static void sort(int arr[]){
+        for(int i=1;i<arr.length;i++){
+            int j=i-1;
+            int key = arr[i];
+           while((j>=0)&&(arr[j]>key)){
                 
-                int t=arr[j];
-                arr[j]=arr[j-1];
-                arr[j-1]=t;
+                arr[j+1] = arr[j];
                 j--;
                 
            }
-           
+           arr[j+1] = key;
         }
-        return arr;
     }
     public static void main(String args[]){
         int arr[]= {1,5,4,2,7,9,-2};
