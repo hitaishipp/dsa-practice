@@ -25,7 +25,7 @@ public class LLUsingCollectionsFramework {
        /*  other methods
         ll.getFirst()    
         ll.getLast()
-        ll.set(index: 1,value: 99)   -> replaces existing element in the new array
+        ll.set(index: 1,value: 99)   -> replaces existing element in the linkedlist
         ll.size()
         ll.isEmpty()
         ll.indexOf()
