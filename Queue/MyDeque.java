@@ -6,7 +6,7 @@ public class MyDeque {
         Node next;
         Node prev;
 
-        Node(int daa){
+        Node(int data){
             this.data = data;
             this.next = null;
             this.prev = null;

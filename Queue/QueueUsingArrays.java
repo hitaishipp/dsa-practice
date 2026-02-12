@@ -2,17 +2,17 @@ package Queue;
 
 public class QueueUsingArrays {
     static class Queue{
-        static int arr[];
-        static int rear =-1;
-        static int front =-1;
-        static int size;
+         int arr[];
+         int rear =-1;
+         int front =-1;
+         int size;
         
         Queue(int n){
             arr = new int[n];
             size = n;
         }
 
-        static void enqueue(int data){
+         void enqueue(int data){
             if(rear == size-1){
                 return;
             }
@@ -21,21 +21,27 @@ public class QueueUsingArrays {
             }
             arr[++rear] = data;
         }
-        static void dequeue(){
-            if(front==rear){
+         void dequeue(){
+            if(front==-1){
                 return;
             }
+            if(front==rear){
+                front =-1;
+                rear = -1;
+                return;
+            }
+            
             front++;
         }
-        static int peek(){
-            if(front==rear){
+         int peek(){
+            if(front==-1){
                 return -1;
             }
             return arr[front];
 
         }
-        static void display(){
-            if(front==rear){
+         void display(){
+            if(front==-1){
                 return;
             }
             for(int i =front;i<=rear;i++){
