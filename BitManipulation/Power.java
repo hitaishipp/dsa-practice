@@ -1,4 +1,4 @@
-public class power {
+public class Power {
     public static void pow(int num,int pow){
         int ans=1;
         while(pow>0){
